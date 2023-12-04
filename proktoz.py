@@ -359,9 +359,6 @@ class Interface:
                 print("Неверный ввод. Пожалуйста, выберите корректное действие.")
 
 
-if __name__ == "__main__":
-    Database.create_tables()
-
     peperoni = Tovar(None, "Peperoni", 599, 99)
     margarita = Tovar(None, "Margarite", 999, 100)
     paramech = Tovar(None, "paramech", 5599999999, 1)
@@ -370,4 +367,8 @@ if __name__ == "__main__":
     Database.add_tovar(margarita)
     Database.add_tovar(paramech)
 
+    
+
+if __name__ == "__main__":
+    Database.create_tables()
     Interface.main()
